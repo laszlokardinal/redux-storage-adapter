@@ -1,0 +1,1 @@
+# redux-storage-adapter
