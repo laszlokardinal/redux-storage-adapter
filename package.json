@@ -1,0 +1,43 @@
+{
+  "name": "redux-storage-adapter",
+  "version": "0.1.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "babel src --out-dir lib --ignore test.js --presets=es2015,stage-0",
+    "test": "mocha --require babel-core/register mochaInit.js \"src/**/*.test.{js,jsx}\"",
+    "format": "prettier --write \"src/**/*.{js,jsx}\"",
+    "format-check": "prettier --list-different \"src/**/*.{js,jsx}\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laszlokardinal/redux-storage-adapter.git"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1",
+    "prettier": "1.7.4",
+    "sinon": "^4.0.1"
+  },
+  "keywords": [
+    "redux",
+    "local",
+    "storage",
+    "react",
+    "native"
+  ],
+  "author": "László Kardinál",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/laszlokardinal/redux-storage-adapter/issues"
+  },
+  "homepage": "https://github.com/laszlokardinal/redux-storage-adapter#readme",
+  "dependencies": {
+    "jsdom": "^11.3.0"
+  }
+}
